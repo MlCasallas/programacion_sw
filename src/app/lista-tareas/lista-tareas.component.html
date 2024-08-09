@@ -1,0 +1,12 @@
+<p>lista-tareas works!</p>
+<div class="tareas-container">
+    <div *ngFor="let tarea of tareas" class="tarea-card">
+      <img [src]="tarea.thumbnailUrl" alt="{{ tarea.title }}" class="tarea-thumbnail" />
+      <div class="tarea-info">
+        <h3>{{ tarea.title }}</h3>
+        <p>ID: {{ tarea.id }} | Album ID: {{ tarea.albumId }}</p>
+        <a [href]="tarea.url" target="_blank" class="tarea-link">Ver imagen completa</a>
+      </div>
+    </div>
+  </div>
+  
